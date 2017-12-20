@@ -23,3 +23,15 @@
  if (! defined('ABSPATH')) {
      exit;
  }
+
+ 
+
+// if admin area
+if (is_admin() ) {
+
+    //include dependencies
+    require_once plugin_dir_path( __FILE__ ) . 'admin/admin-topmenu.php';
+    require_once plugin_dir_path( __FILE__ ) . 'admin/settings-page.php';
+}
+
+
